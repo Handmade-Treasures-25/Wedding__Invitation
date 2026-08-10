@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f8eee9" />
+  <title>Emily & Alexander | Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient-glow glow-one"></div>
+  <div class="ambient-glow glow-two"></div>
+  <div id="sparkleField" aria-hidden="true"></div>
+
+  <main class="site-shell">
+    <!-- HERO / OPENING -->
+    <section class="hero" id="home">
+      <div class="ornament top-ornament">✦</div>
+      <p class="eyebrow">A BLESSING · A PROMISE · A BEGINNING</p>
+      <div class="monogram">E<span>&amp;</span>A</div>
+      <p class="blessing">“Two hearts, one beautiful promise,<br>blessed by love and cherished forever.”</p>
+
+      <button class="open-btn" id="openInvitation" type="button">
+        <span class="btn-shimmer"></span>
+        <span class="btn-label">Open Invitation</span>
+        <span class="btn-loader" aria-hidden="true"></span>
+      </button>
+
+      <p class="tap-note">Tap to unveil the celebration</p>
+      <div class="ornament bottom-ornament">❦</div>
+    </section>
+
+    <!-- INVITATION -->
+    <section class="invitation" id="invitation" aria-hidden="true">
+      <div class="gold-line"></div>
+
+      <div class="intro-card reveal">
+        <p class="mini-label">WITH JOY IN OUR HEARTS</p>
+        <h1>Emily <span>&amp;</span> Alexander</h1>
+        <p class="script-line">invite you to celebrate their wedding</p>
+        <div class="floral-rule"><span>✦</span><i></i><span>✦</span></div>
+        <p class="simple-copy">
+          Together with their families,<br>
+          they invite you to witness the beginning<br>
+          of their forever.
+        </p>
+      </div>
+
+      <!-- SCRATCH REVEAL -->
+      <section class="scratch-section reveal">
+        <p class="mini-label">A LITTLE SURPRISE</p>
+        <h2>Scratch to reveal</h2>
+        <p class="section-note">Reveal the celebration details beneath the shimmer.</p>
+
+        <div class="scratch-wrap">
+          <div class="scratch-card" id="scratchCard">
+            <div class="scratch-content">
+              <span class="revealed-label">THE DATE</span>
+              <strong>18 · OCTOBER · 2026</strong>
+              <small>Save this beautiful day</small>
+              <div class="tiny-star">✦</div>
+            </div>
+            <canvas id="scratchCanvas"></canvas>
+            <div class="scratch-hint" id="scratchHint">SCRATCH HERE</div>
+            <div class="reveal-burst" id="revealBurst"></div>
+          </div>
+        </div>
+
+        <div class="progress-wrap">
+          <div class="progress-track"><div class="progress-bar" id="progressBar"></div></div>
+          <span id="progressText">0% revealed</span>
+        </div>
+      </section>
+
+      <!-- DETAILS -->
+      <section class="details-grid reveal">
+        <article class="glass-card">
+          <div class="card-icon">♔</div>
+          <p class="mini-label">THE CEREMONY</p>
+          <h3>St. Claire Chapel</h3>
+          <p>Private garden chapel<br>Lake Como, Italy</p>
+        </article>
+
+        <article class="glass-card">
+          <div class="card-icon">✧</div>
+          <p class="mini-label">THE CELEBRATION</p>
+          <h3>Villa Bellavista</h3>
+          <p>An intimate evening of<br>music, dinner &amp; memories</p>
+        </article>
+      </section>
+
+      <!-- COUNTDOWN -->
+      <section class="countdown-card reveal">
+        <p class="mini-label">COUNTING THE MOMENTS</p>
+        <div class="countdown" id="countdown">
+          <div><strong id="days">00</strong><span>DAYS</span></div>
+          <i>:</i>
+          <div><strong id="hours">00</strong><span>HOURS</span></div>
+          <i>:</i>
+          <div><strong id="minutes">00</strong><span>MIN</span></div>
+          <i>:</i>
+          <div><strong id="seconds">00</strong><span>SEC</span></div>
+        </div>
+      </section>
+
+      <!-- LOCATION -->
+      <section class="location-card reveal">
+        <div class="map-art" aria-hidden="true">
+          <span class="map-ring ring-a"></span>
+          <span class="map-ring ring-b"></span>
+          <span class="map-pin">✦</span>
+          <span class="map-route"></span>
+        </div>
+        <div class="location-copy">
+          <p class="mini-label">FIND YOUR WAY</p>
+          <h2>Lake Como, Italy</h2>
+          <p>St. Claire Chapel · Villa Bellavista</p>
+          <button class="track-btn" id="trackLocation" type="button">Track Location ↗</button>
+        </div>
+      </section>
+
+      <!-- CLOSING -->
+      <section class="closing reveal">
+        <div class="closing-ornament">❦</div>
+        <p class="mini-label">THANK YOU</p>
+        <h2>Your presence is our<br><em>greatest gift.</em></h2>
+        <p>We cannot wait to share this beautiful chapter with you.</p>
+        <div class="signature">Emily &amp; Alexander</div>
+        <div class="closing-mark">E <span>&amp;</span> A</div>
+      </section>
+
+      <footer>
+        <span>MADE WITH LOVE</span>
+        <span>✦</span>
+        <span>2026</span>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
